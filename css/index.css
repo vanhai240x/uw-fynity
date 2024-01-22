@@ -489,6 +489,51 @@ template {
   display: none !important;
 }
 
+@media (max-width: 1270px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 50px);
+  }
+  .title-base {
+    font-size: 18px;
+  }
+  .subtitle-base {
+    font-size: 33px;
+  }
+  .context-base {
+    font-size: 16px;
+  }
+  .btn-yellow {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 10px 16px;
+  }
+  .btn-yellow.arrow {
+    width: 214px;
+  }
+  .btn-yellow.arrow::after {
+    width: 35px;
+    right: 17px;
+  }
+  .btn-yellow.arrow:hover::after {
+    width: 57px;
+  }
+  .PC {
+    display: none !important;
+  }
+  .SP {
+    display: block !important;
+  }
+}
 .header {
   margin-bottom: -70px;
 }
@@ -647,6 +692,59 @@ template {
   background: #47A8BD;
 }
 
+@media (max-width: 992px) {
+  .header .menu-fixed .left-side {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .header .logo {
+    width: 37px;
+    height: 42px;
+  }
+  .header .right .btn-yellow {
+    display: none;
+  }
+  .header .menu-fixed {
+    padding: 50px 0;
+  }
+  .header .menu-fixed .close {
+    top: 18px;
+    right: 32px;
+  }
+  .header .menu-fixed .container {
+    height: auto;
+    flex-direction: column;
+  }
+  .header .menu-fixed .container .left-side {
+    width: 100%;
+    border-right: none;
+    padding: 0;
+  }
+  .header .menu-fixed .container .left-side .logo {
+    margin-bottom: 15px;
+  }
+  .header .menu-fixed .container .left-side .links a {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .header .menu-fixed .container .right-side {
+    width: 100%;
+    padding-top: 30px;
+  }
+  .header .menu-fixed .container .right-side .title-base {
+    margin-bottom: 10px;
+  }
+  .header .menu-fixed .container .right-side .contact {
+    margin-bottom: 15px;
+  }
+  .header .menu-fixed .container .right-side .socials {
+    margin-bottom: 25px;
+  }
+  .header .menu-fixed .container .right-side .buttons .btn-yellow {
+    margin-bottom: 15px;
+  }
+}
 .footer {
   padding: 65px 0 10px;
   background: #000000;
@@ -747,9 +845,6 @@ template {
 }
 
 @media (max-width: 1270px) {
-  .container {
-    max-width: 960px;
-  }
   .footer .container {
     padding: 0 30px;
   }
@@ -757,94 +852,7 @@ template {
     width: 60%;
   }
 }
-@media (max-width: 992px) {
-  .container {
-    max-width: 720px;
-  }
-  .header .menu-fixed .left-side {
-    width: 50%;
-  }
-}
 @media (max-width: 768px) {
-  .container {
-    width: calc(100% - 50px);
-  }
-  .title-base {
-    font-size: 18px;
-  }
-  .subtitle-base {
-    font-size: 33px;
-  }
-  .context-base {
-    font-size: 16px;
-  }
-  .btn-yellow {
-    font-size: 16px;
-    line-height: 28px;
-    padding: 10px 16px;
-  }
-  .btn-yellow.arrow {
-    width: 214px;
-  }
-  .btn-yellow.arrow::after {
-    width: 35px;
-    right: 17px;
-  }
-  .btn-yellow.arrow:hover::after {
-    width: 57px;
-  }
-  .PC {
-    display: none !important;
-  }
-  .SP {
-    display: block !important;
-  }
-  .header .logo {
-    width: 37px;
-    height: 42px;
-  }
-  .header .right .btn-yellow {
-    display: none;
-  }
-  .header .menu-fixed {
-    padding: 50px 0;
-  }
-  .header .menu-fixed .close {
-    top: 18px;
-    right: 32px;
-  }
-  .header .menu-fixed .container {
-    height: auto;
-    flex-direction: column;
-  }
-  .header .menu-fixed .container .left-side {
-    width: 100%;
-    border-right: none;
-    padding: 0;
-  }
-  .header .menu-fixed .container .left-side .logo {
-    margin-bottom: 15px;
-  }
-  .header .menu-fixed .container .left-side .links a {
-    font-size: 16px;
-    margin-bottom: 8px;
-  }
-  .header .menu-fixed .container .right-side {
-    width: 100%;
-    padding-top: 30px;
-  }
-  .header .menu-fixed .container .right-side .title-base {
-    margin-bottom: 10px;
-  }
-  .header .menu-fixed .container .right-side .contact {
-    margin-bottom: 15px;
-  }
-  .header .menu-fixed .container .right-side .socials {
-    margin-bottom: 25px;
-  }
-  .header .menu-fixed .container .right-side .buttons .btn-yellow {
-    margin-bottom: 15px;
-  }
   .footer {
     padding: 55px 0 40px;
   }

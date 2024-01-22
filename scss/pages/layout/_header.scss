@@ -1,0 +1,227 @@
+@import "../../helpers/variable";
+
+.header {
+  margin-bottom: -70px;
+  .container {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    width: 37px;
+    height: 42px;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    .btn-yellow {
+      width: 150px;
+      height: 40px;
+      padding: 0;
+    }
+    .burger {
+      display: flex;
+      flex-direction: column;
+      margin-left: 46px;
+      cursor: pointer;
+      &:hover {
+        span {
+          width: 60px !important;
+        }
+      }
+      span {
+        display: block;
+        width: 60px;
+        height: 1px;
+        background: $maize-yellow;
+        transition: 0.3s ease-in-out;
+        &.line-1 {
+          width: 50%;
+          margin-left: auto;
+        }
+        &.line-2 {
+          margin: 8px 0;
+        }
+        &.line-3 {
+          width: 50%;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+  .menu-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -9;
+    width: 100%;
+    height: 100vh;
+    background: $space-cadet-blue;
+    padding: 56px 0 70px;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    pointer-events: none;
+    &.active {
+      z-index: 99;
+      opacity: 1;
+      pointer-events: inherit;
+    }
+    .close {
+      position: absolute;
+      top: 38px;
+      right: 52px;
+      cursor: pointer;
+      i {
+        font-size: 30px;
+        color: $maize-yellow;
+      }
+    }
+    .container {
+      height: calc(100vh - 126px);
+      display: flex;
+      justify-content: space-between;
+    }
+    .left-side {
+      width: 55%;
+      height: 100%;
+      padding: 32px 0 65px;
+      border-right: 1px solid #707070;
+      .logo {
+        width: 126px;
+        height: 75px;
+        margin-bottom: 80px;
+      }
+      .links {
+        display: flex;
+        flex-direction: column;
+        a {
+          display: inline-block;
+          font-size: 22px;
+          line-height: 1.5;
+          color: $white;
+          font-weight: $semi-bold;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .right-side {
+      width: max-content;
+      height: 100%;
+      padding-top: 90px;
+      .title-base {
+        color: $maize-yellow;
+        margin-bottom: 60px;
+      }
+      .contact {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        a {
+          display: inline-block;
+          font-size: 18px;
+          line-height: 22px;
+          color: $white;
+        }
+      }
+      .socials {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        a {
+          display: inline-block;
+          font-size: 27px;
+          color: $maize-yellow;
+          margin-right: 30px;
+        }
+      }
+      .buttons {
+        .btn-yellow {
+          margin-bottom: 22px;
+        }
+      }
+    }
+  }
+  &.header-white {
+    width: 100%;
+    background: $white;
+    margin-bottom: 0;
+    position: fixed;
+    top: -100px;
+    left: 0;
+    z-index: -9;
+    transition: 0.4s ease-in-out;
+    &.active {
+      top: 0;
+      z-index: 99;
+    }
+    .right {
+      .burger {
+        span {
+          background: $moonstone-blue;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header .menu-fixed .left-side {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    .logo {
+      width: 37px;
+      height: 42px;
+    }
+    .right .btn-yellow {
+      display: none;
+    }
+    .menu-fixed {
+      padding: 50px 0;
+      .close {
+        top: 18px;
+        right: 32px;
+      }
+      .container {
+        height: auto;
+        flex-direction: column;
+        .left-side {
+          width: 100%;
+          border-right: none;
+          padding: 0;
+          .logo {
+            margin-bottom: 15px;
+          }
+          .links {
+            a {
+              font-size: 16px;
+              margin-bottom: 8px;
+            }
+          }
+        }
+        .right-side {
+          width: 100%;
+          padding-top: 30px;
+          .title-base {
+            margin-bottom: 10px;
+          }
+          .contact {
+            margin-bottom: 15px;
+          }
+          .socials {
+            margin-bottom: 25px;
+          }
+          .buttons {
+            .btn-yellow {
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
