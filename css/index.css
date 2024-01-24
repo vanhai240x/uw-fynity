@@ -474,11 +474,24 @@ template {
   width: 56px;
   height: 56px;
   font-size: 0;
-  background: url("https://static.thenounproject.com/png/544984-200.png") center/contain;
+  background: #47A8BD;
   border: none;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+.slick-next::before,
+.slick-prev::before {
+  content: "";
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 7px;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 4px);
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .slick-prev {
@@ -526,6 +539,10 @@ template {
   }
   .btn-yellow.arrow:hover::after {
     width: 57px;
+  }
+  .slick-next,
+  .slick-prev {
+    background: none;
   }
   .PC {
     display: none !important;
@@ -602,14 +619,20 @@ template {
   pointer-events: inherit;
 }
 .header .menu-fixed .close {
+  width: 30px;
+  height: 30px;
   position: absolute;
   top: 38px;
   right: 52px;
   cursor: pointer;
 }
-.header .menu-fixed .close i {
-  font-size: 30px;
+.header .menu-fixed .close::before {
+  display: inline-block;
+  content: "×";
   color: #F5E663;
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 22px;
 }
 .header .menu-fixed .container {
   height: calc(100vh - 126px);
@@ -662,14 +685,14 @@ template {
 }
 .header .menu-fixed .right-side .socials {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   margin-bottom: 50px;
 }
 .header .menu-fixed .right-side .socials a {
-  display: inline-block;
-  font-size: 27px;
-  color: #F5E663;
   margin-right: 30px;
+}
+.header .menu-fixed .right-side .socials a img {
+  width: 22px;
 }
 .header .menu-fixed .right-side .buttons .btn-yellow {
   margin-bottom: 22px;
@@ -755,7 +778,7 @@ template {
 .footer .logos {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
   padding-bottom: 45px;
   margin-bottom: 20px;
   position: relative;
@@ -771,10 +794,10 @@ template {
   right: 0;
 }
 .footer .logos a {
-  display: inline-block;
-  font-size: 27px;
-  color: #F5E663;
   margin-right: 30px;
+}
+.footer .logos a img {
+  width: 22px;
 }
 .footer .info {
   display: flex;
@@ -813,11 +836,14 @@ template {
   margin-bottom: 25px;
 }
 .footer .links .left p {
+  display: flex;
+  align-items: center;
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
 }
 .footer .links .left p img {
+  width: 150px;
   padding-left: 5px;
 }
 .footer .links .right {
@@ -1128,9 +1154,10 @@ template {
 #homepage .how-we-do .container .left .img {
   width: 100%;
   height: 603px;
-  background: url("https://zshop.vn/blogs/wp-content/uploads/2016/08/1045.jpg") center/cover;
+  background: url("../../../image/Stock Images/Fynity - Website Imagery/Homepage/Fynity - Homepage_Image_1.jpeg") center/cover;
   border-radius: 0 42px 42px 0;
   position: relative;
+  transform: scaleX(-1);
 }
 #homepage .how-we-do .container .right {
   flex: 1;
@@ -1182,9 +1209,15 @@ template {
 }
 #homepage .talent-solutions .slider-talent .item {
   width: 255px;
+  min-height: 350px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 #homepage .talent-solutions .slider-talent .item img {
-  width: 122px;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 25px;
 }
 #homepage .talent-solutions .slider-talent .item h3 {
   font-size: 50px;
@@ -1287,7 +1320,7 @@ template {
   flex-direction: column;
   justify-content: flex-end;
   border-radius: 42px 0 0 42px;
-  background: url("https://zshop.vn/blogs/wp-content/uploads/2016/08/1045.jpg") center/cover;
+  background: url("../../../image/Stock Images/Fynity - Website Imagery/Homepage/Fynity - Homepage_Image_2.jpg") center/cover;
   padding: 56px;
   position: relative;
 }
@@ -1672,6 +1705,12 @@ template {
     width: 214px !important;
     margin: auto;
   }
+  #homepage .talent-solutions .slider-talent .slick-prev {
+    left: -60px;
+  }
+  #homepage .talent-solutions .slider-talent .slick-next {
+    right: -56px;
+  }
   #homepage .our-specialist {
     padding: 70px 0 22px;
   }
@@ -1799,6 +1838,12 @@ template {
     font-size: 26px;
     line-height: 30px;
     padding: 18px 30px 0;
+  }
+  #homepage .insights .slider-insights .slick-next {
+    right: -32px;
+  }
+  #homepage .insights .slider-insights .slick-prev {
+    left: -37px;
   }
 }
 html,

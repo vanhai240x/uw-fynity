@@ -277,12 +277,23 @@
   width: 56px;
   height: 56px;
   font-size: 0;
-  background: url("https://static.thenounproject.com/png/544984-200.png") center /
-    contain;
+  background: $moonstone-blue;
   border: none;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  &::before {
+    content: "";
+    border: solid $white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 7px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 4px);
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
 }
 .slick-prev {
   right: auto;
@@ -333,6 +344,10 @@
         }
       }
     }
+  }
+  .slick-next,
+  .slick-prev {
+    background: none;
   }
   .PC {
     display: none !important;
