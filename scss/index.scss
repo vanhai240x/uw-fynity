@@ -1,0 +1,14 @@
+@import "./font";
+@import "./reset";
+@import "./variable";
+@import "./mixin";
+@import "./common";
+@import "./header";
+@import "./footer";
+@import "./homepage";
+html,
+body {
+  font-family: graphie, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
