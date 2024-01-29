@@ -6,9 +6,16 @@
 @import "./header";
 @import "./footer";
 @import "./homepage";
+@import "./about-us";
 html,
 body {
   font-family: graphie, sans-serif;
   font-style: normal;
   font-weight: 400;
 }
+
+@media (max-width: 1270px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
