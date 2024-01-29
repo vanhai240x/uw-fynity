@@ -392,6 +392,20 @@
   padding: 92px 0 76px;
   text-align: center;
   background: $charcoal-blue;
+  .container {
+    position: relative;
+    &::before {
+      content: '';
+      width: 984px;
+      height: 190px;
+      background: $moonstone-blue;
+      border-radius: 42px;
+      position: absolute;
+      top: -150px;
+      left: 0;
+      z-index: -1;
+    }
+  }
   .title-base {
     margin-bottom: 20px;
   }
@@ -565,6 +579,9 @@
   .container {
     max-width: 720px;
   }
+  .our-clients .container::before {
+    content: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -631,6 +648,12 @@
       }
       .left {
         padding: 0;
+        .subtitle-base {
+          margin-bottom: 35px;
+        }
+        .context-base {
+          margin-bottom: 40px;
+        }
         .btn-yellow {
           display: none;
         }
