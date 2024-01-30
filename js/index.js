@@ -89,13 +89,33 @@ for (let i = 0; i < coll.length; i++) {
 }
 
 // Homepage
-$('#homepage .our-specialist .container .left .items .item').hover(function(e) {
-  $('#homepage .our-specialist .container .left .items .item').removeClass('active');
-  $(this).addClass('active');
-  let img = $(this).attr('attr-img');
-  let title = $(this).attr('attr-title');
-  let content = $(this).attr('attr-content');
-  $('#homepage .our-specialist .container .right').css('background-image', `url('${img}')`);
-  $('#homepage .our-specialist .container .right .title').text(title);
-  $('#homepage .our-specialist .container .right .content').text(content);
+$("#homepage .our-specialist .container .left .items .item").hover(function (
+  e
+) {
+  $("#homepage .our-specialist .container .left .items .item").removeClass(
+    "active"
+  );
+  $(this).addClass("active");
+  let img = $(this).attr("attr-img");
+  let title = $(this).attr("attr-title");
+  let content = $(this).attr("attr-content");
+  $("#homepage .our-specialist .container .right").css(
+    "background-image",
+    `url('${img}')`
+  );
+  $("#homepage .our-specialist .container .right .title").text(title);
+  $("#homepage .our-specialist .container .right .content").text(content);
+});
+
+// Meet the team
+$("#meet-the-team .find-out .items .item .btn-yellow").click(() => {
+  $("#meet-the-team .popup").addClass("active");
+});
+$("#meet-the-team .popup .wrapper .close").click(() => {
+  $("#meet-the-team .popup").removeClass("active");
+});
+$("#meet-the-team .popup").click((e) => {
+  if ($(e.target).attr('class') === "popup active") {
+    $("#meet-the-team .popup").removeClass("active");
+  }
 });

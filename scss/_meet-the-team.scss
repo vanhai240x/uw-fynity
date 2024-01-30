@@ -1,0 +1,510 @@
+@import "./variable";
+
+#meet-the-team {
+  .banner {
+    height: 560px;
+    background-image: url("../image/Stock Images/Fynity - Website Imagery/Meet the Team/Fynity - Meet_The_Team_Hero_Banner_LOW_RES.jpeg");
+    position: relative;
+    &::before {
+      content: "";
+      width: 55%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.9999999999999999) 0%,
+        rgba(84, 84, 84, 0) 100%
+      );
+      z-index: 1;
+    }
+    &::after {
+      content: "";
+      width: 100%;
+      height: 30%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.9999999999999999) 0%,
+        rgba(84, 84, 84, 0) 100%
+      );
+      z-index: 1;
+    }
+    .container {
+      position: relative;
+      z-index: 2;
+      .subtitle-base {
+        max-width: 450px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .find-out {
+    padding: 100px 0 80px;
+    .title {
+      margin-bottom: 70px;
+      .subtitle-base {
+        max-width: 700px;
+        margin-top: 30px;
+      }
+    }
+    .items {
+      max-width: 1080px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      .item {
+        width: 340px;
+        height: 311px;
+        border-radius: 16px;
+        background: url("../image/Stock Images/Fynity - Website Imagery/Meet the Team/Fynity - Meet_The_Team_Image_1_LOW_RES.jpeg")
+          center / cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 10px 20px;
+        margin: 0 10px 40px;
+        position: relative;
+        &::before {
+          content: "";
+          width: 100%;
+          height: 100%;
+          background: transparent
+            linear-gradient(180deg, #1d394b00 0%, #0e1a234d 11%, #060b0f74 100%)
+            0% 0% no-repeat padding-box;
+          border-radius: 16px;
+          opacity: 0.84;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        &::after {
+          content: "";
+          width: 0;
+          height: 100%;
+          background: #000000 0% 0% no-repeat padding-box;
+          border-radius: 16px;
+          opacity: 0.21;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: 0.3s ease-in-out;
+        }
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+        p {
+          font-size: 20px;
+          line-height: 1.5;
+          color: $white;
+          font-weight: $bold;
+          position: relative;
+          z-index: 2;
+        }
+        .p2 {
+          font-weight: $book;
+          margin-top: 5px;
+        }
+        .btn-yellow {
+          width: 180px;
+          padding-left: 0;
+          border: none;
+          &::before {
+            content: none;
+          }
+          &:hover {
+            color: $white;
+            &::after {
+              background: $white;
+            }
+            .icon-right {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+  .popup {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba($color: $black, $alpha: .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease-in-out;
+    z-index: -99;
+    opacity: 0;
+    &.active {
+      z-index: 99;
+      opacity: 1;
+    }
+    .wrapper {
+      width: 90%;
+      max-width: 1200px;
+      display: flex;
+      position: relative;
+      .close {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 38px;
+        right: 52px;
+        cursor: pointer;
+        &::before {
+          display: inline-block;
+          content: "\00d7";
+          color: $maize-yellow;
+          font-size: 40px;
+          font-weight: 100;
+          line-height: 22px;
+        }
+      }
+      .left {
+        width: 45%;
+        img {
+          width: 100%;
+          height: 90vh;
+          max-height: 700px;
+          object-fit: cover;
+        }
+      }
+      .right {
+        width: 55%;
+        height: 90vh;
+        max-height: 700px;
+        background: $charcoal-blue;
+        padding: 80px 70px 50px;
+        overflow: auto;
+        .subtitle-base {
+          margin-bottom: 30px;
+        }
+        .title-base {
+          font-size: 20px;
+          font-weight: $bold;
+          margin-bottom: 30px;
+        }
+        .context-base {
+          margin-bottom: 20px;
+        }
+        a img {
+          width: 22px;
+          margin: 40px 0 25px;
+        }
+      }
+    }
+  }
+  .team-fynity {
+    padding-bottom: 125px;
+    .container {
+      display: flex;
+      position: relative;
+      &::before {
+        content: "";
+        width: 124px;
+        height: 339px;
+        background: $moonstone-blue;
+        border-radius: 25px;
+        position: absolute;
+        top: 37%;
+        left: -260px;
+      }
+      &::after {
+        content: "";
+        width: 521px;
+        height: 189px;
+        background: $maize-yellow;
+        border-radius: 42px;
+        position: absolute;
+        top: 65%;
+        left: -510px;
+      }
+    }
+    .left {
+      max-width: 540px;
+      margin-left: 180px;
+      margin-right: 142px;
+      .title-base {
+        margin-bottom: 30px;
+      }
+      .subtitle-base {
+        margin-bottom: 50px;
+      }
+      .context-base {
+        max-width: 500px;
+        margin-bottom: 32px;
+      }
+    }
+    .right {
+      flex: 1;
+      position: relative;
+      img {
+        border-radius: 37px;
+        position: absolute;
+        top: 20px;
+        left: 0;
+      }
+    }
+  }
+  .next-challenge {
+    padding: 240px 0 165px;
+    background: url("../image/Stock Images/Fynity - Website Imagery/Meet the Team/Fynity - Meet_The_Team_Image_4_LOW_RES.jpeg")
+      center / cover;
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: "";
+      width: 80%;
+      height: 100%;
+      background: transparent linear-gradient(90deg, #000000 0%, #54545400 100%)
+        0% 0% no-repeat padding-box;
+      mix-blend-mode: multiply;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    .container {
+      position: relative;
+      &::before {
+        content: "";
+        width: 229px;
+        height: 405px;
+        background: $moonstone-blue;
+        border-radius: 42px;
+        position: absolute;
+        top: 50%;
+        right: -290px;
+      }
+      &::after {
+        content: "";
+        width: 210px;
+        height: 77px;
+        background: $maize-yellow;
+        border-radius: 25px;
+        position: absolute;
+        top: 45%;
+        right: -330px;
+      }
+    }
+    .left {
+      max-width: 360px;
+      position: relative;
+      &::before {
+        content: "";
+        width: 85px;
+        height: 179px;
+        background: $maize-yellow;
+        border-radius: 25px;
+        position: absolute;
+        top: -45%;
+        left: -170px;
+      }
+      &::after {
+        content: "";
+        width: 494px;
+        height: 77px;
+        background: $moonstone-blue;
+        border-radius: 25px;
+        position: absolute;
+        top: -44%;
+        right: -995px;
+      }
+      .title-base {
+        margin-bottom: 30px;
+      }
+      .context-base {
+        margin: 30px 0;
+      }
+      .btn-yellow {
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1270px) {
+  #meet-the-team {
+    .find-out .items {
+      max-width: 720px;
+    }
+    .team-fynity .left {
+      margin-left: 30px;
+      margin-right: 80px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #meet-the-team {
+    .banner {
+      .container .left {
+        width: 70%;
+      }
+    }
+    .popup {
+      .wrapper {
+        .right {
+          padding: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #meet-the-team {
+    .banner {
+      height: 100vh;
+      padding-bottom: 0;
+      padding-top: 70px;
+      justify-content: center;
+      .container {
+        .left {
+          width: 100%;
+        }
+        .subtitle-base {
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        .context-base {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .find-out {
+      padding: 72px 0;
+      .title {
+        margin-bottom: 40px;
+        .subtitle-base {
+          margin-top: 20px;
+        }
+      }
+      .items {
+        max-width: 312px;
+        justify-content: space-between;
+        .item {
+          width: 152px;
+          height: 152px;
+          padding: 5px 15px 20px;
+          margin: 0 0 7px;
+          p {
+            font-size: 18px;
+          }
+          .p2 {
+            display: none;
+          }
+          .btn-yellow {
+            width: 120px;
+            min-width: auto;
+            padding-top: 0;
+            padding-bottom: 0;
+            &.arrow::after {
+              width: 25px;
+            }
+          }
+        }
+      }
+    }
+    .popup {
+      .wrapper {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        padding: 50px 20px 20px;
+        background: $charcoal-blue;
+        overflow: auto;
+        .close {
+          top: 15px;
+          right: 12px;
+        }
+        .left {
+          width: 100%;
+          img {
+            height: 85vw;
+          }
+        }
+        .right {
+          width: 100%;
+          height: auto;
+          max-height: none;
+          overflow: initial;
+          padding: 15px 20px;
+          .subtitle-base {
+            margin-bottom: 15px;
+          }
+          .title-base {
+            font-size: 16px;
+            margin-bottom: 15px;
+          }
+          .context-base {
+            margin-bottom: 15px;
+          }
+          a img {
+            margin: 10px 0 20px;
+          }
+        }
+      }
+    }
+    .team-fynity {
+      padding-bottom: 150px;
+      .container {
+        flex-direction: column;
+        &::before,
+        &::after {
+          content: none;
+        }
+      }
+      .left {
+        margin: 0 0 58px;
+        .title-base {
+          margin-bottom: 15px;
+        }
+        .subtitle-base {
+          margin-bottom: 25px;
+        }
+        .context-base {
+          margin-bottom: 20px;
+        }
+        .btn-yellow {
+          margin-top: 40px;
+        }
+      }
+      .right {
+        text-align: center;
+        img {
+          width: 100%;
+          max-width: 330px;
+          height: 487px;
+          border-radius: 37px;
+          position: relative;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+    .next-challenge {
+      padding: 100px 0 80px;
+      .left {
+        .title-base {
+          margin-bottom: 20px;
+        }
+        .context-base {
+          margin: 20px 0;
+        }
+        .btn-yellow {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
