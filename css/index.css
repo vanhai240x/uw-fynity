@@ -3182,6 +3182,368 @@ template {
     margin-top: 40px;
   }
 }
+#candidates .banner {
+  height: 562px;
+  background-image: url("../image/Stock Images/Fynity - Website Imagery/Candidates/Fynity - Candidates__Homepage_Banner.jpeg");
+  background-position-y: 10%;
+  position: relative;
+}
+#candidates .banner::before {
+  content: "";
+  width: 83%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(84, 84, 84, 0) 100%);
+  z-index: 1;
+}
+#candidates .banner::after {
+  content: "";
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(84, 84, 84, 0) 100%);
+  z-index: 1;
+}
+#candidates .banner .container {
+  position: relative;
+  z-index: 2;
+}
+#candidates .banner .container .subtitle-base {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#candidates .banner .container .context-base {
+  max-width: 420px;
+  margin-bottom: 30px;
+}
+#candidates .description .container {
+  padding: 0 150px 165px;
+  position: relative;
+}
+#candidates .description .container::before {
+  content: "";
+  width: 320px;
+  height: 122px;
+  background: #47A8BD;
+  border-radius: 25px;
+  position: absolute;
+  left: -270px;
+  bottom: 230px;
+}
+#candidates .description .container::after {
+  content: "";
+  width: 203px;
+  height: 268px;
+  background: #47A8BD;
+  border-radius: 25px;
+  position: absolute;
+  right: -280px;
+  top: 37px;
+  z-index: -1;
+}
+#candidates .description .bluebox {
+  background: #1D244B;
+  border-radius: 0 0 25px 25px;
+  padding: 70px 180px 40px 135px;
+  position: relative;
+}
+#candidates .description .bluebox::before {
+  content: "";
+  width: 200px;
+  height: 448px;
+  background: #F5E663;
+  border-radius: 42px;
+  position: absolute;
+  left: -230px;
+  bottom: 120px;
+}
+#candidates .description .bluebox::after {
+  content: "";
+  width: 414px;
+  height: 709px;
+  background: url("../image/Stock Images/Fynity - Website Imagery/Candidates/Fynity - Candidates__Image_1.jpeg") 70%/cover;
+  border-radius: 42px 0 0 42px;
+  position: absolute;
+  right: -270px;
+  bottom: -40px;
+}
+#candidates .description .bluebox .subtitle-base {
+  margin-bottom: 50px;
+}
+#candidates .description .bluebox .context-base {
+  max-width: 550px;
+  margin-bottom: 40px;
+}
+#candidates .what-to-expect {
+  padding-bottom: 150px;
+}
+#candidates .what-to-expect .container {
+  display: flex;
+}
+#candidates .what-to-expect .left {
+  width: 460px;
+  margin-left: 180px;
+  margin-right: 140px;
+  position: relative;
+}
+#candidates .what-to-expect .left::before {
+  content: "";
+  width: 407px;
+  height: 189px;
+  background: #F5E663;
+  border-radius: 42px;
+  position: absolute;
+  bottom: 36%;
+  left: -480px;
+}
+#candidates .what-to-expect .left .title-base {
+  padding-top: 65px;
+  margin-bottom: 30px;
+}
+#candidates .what-to-expect .left .subtitle-base {
+  margin-bottom: 30px;
+}
+#candidates .what-to-expect .left .context-base {
+  margin-bottom: 30px;
+}
+#candidates .what-to-expect .left ul {
+  padding-left: 30px;
+}
+#candidates .what-to-expect .left ul li {
+  font-size: 20px;
+  line-height: 32px;
+  color: #1D394B;
+  font-weight: 400;
+  margin-bottom: 30px;
+  position: relative;
+}
+#candidates .what-to-expect .left ul li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #47A8BD;
+  border-radius: 4px;
+  position: absolute;
+  top: 10px;
+  left: -30px;
+}
+#candidates .what-to-expect .left ul li b {
+  font-weight: 700;
+}
+#candidates .what-to-expect .right {
+  width: calc(100% - 780px);
+  position: relative;
+}
+#candidates .what-to-expect .right::before {
+  content: "";
+  width: 459px;
+  height: 189px;
+  background: #F5E663;
+  border-radius: 42px;
+  position: absolute;
+  top: 38%;
+  left: 53%;
+  z-index: -1;
+}
+#candidates .what-to-expect .right::after {
+  content: "";
+  width: 124px;
+  height: 339px;
+  background: #47A8BD;
+  border-radius: 25px;
+  position: absolute;
+  top: 27%;
+  right: -230px;
+  z-index: -1;
+}
+#candidates .what-to-expect .right img {
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#candidates .what-to-expect .right .img-1 {
+  width: 550px;
+  height: 550px;
+  margin-bottom: 60px;
+}
+#candidates .what-to-expect .right .img-2 {
+  width: 394px;
+  height: 307px;
+}
+#candidates .talk-to-us .container .left {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#candidates .talk-to-us .container .left .subtitle-base {
+  max-width: none;
+}
+#candidates .client-say {
+  padding: 100px 138px 150px;
+}
+#candidates .client-say .slider-say img {
+  width: 132px;
+  margin-bottom: 80px;
+}
+#candidates .client-say .slider-say .subtitle-base {
+  max-width: 620px;
+  margin-bottom: 50px;
+}
+#candidates .client-say .slider-say .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 65px;
+}
+#candidates .client-say .slider-say .slick-dots li {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #47A8BD;
+  border-radius: 15px;
+  margin: 0 4px;
+}
+#candidates .client-say .slider-say .slick-dots li.slick-active {
+  background: #47A8BD;
+}
+#candidates .client-say .slider-say .slick-dots li button {
+  display: none;
+}
+
+@media (max-width: 1270px) {
+  #candidates .description .container {
+    padding: 0 100px 140px;
+  }
+  #candidates .description .bluebox {
+    padding: 70px 160px 100px 90px;
+  }
+}
+@media (max-width: 992px) {
+  #candidates .banner .container .left {
+    width: 70%;
+  }
+  #candidates .description .container {
+    padding: 0 0 100px;
+  }
+  #candidates .description .bluebox {
+    padding: 50px 150px 100px 50px;
+  }
+  #candidates .what-to-expect .left {
+    margin-left: 0;
+    margin-right: 50px;
+  }
+}
+@media (max-width: 768px) {
+  #candidates .banner {
+    height: 100vh;
+    padding-bottom: 0;
+    padding-top: 70px;
+    justify-content: center;
+  }
+  #candidates .banner .container .left {
+    width: 100%;
+  }
+  #candidates .banner .container .subtitle-base {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #candidates .banner .container .context-base {
+    margin-bottom: 20px;
+  }
+  #candidates .description {
+    background: #1D244B;
+  }
+  #candidates .description .container {
+    padding: 70px 0 80px;
+  }
+  #candidates .description .container::before {
+    content: none;
+  }
+  #candidates .description .bluebox {
+    padding: 0;
+  }
+  #candidates .description .bluebox::before, #candidates .description .bluebox::after {
+    content: none;
+  }
+  #candidates .description .bluebox .subtitle-base {
+    margin-bottom: 30px;
+  }
+  #candidates .description .bluebox .context-base {
+    margin-bottom: 30px;
+  }
+  #candidates .what-to-expect {
+    padding: 50px 0 60px;
+  }
+  #candidates .what-to-expect .container {
+    flex-direction: column;
+  }
+  #candidates .what-to-expect .left {
+    width: 100%;
+  }
+  #candidates .what-to-expect .left::before {
+    content: none;
+  }
+  #candidates .what-to-expect .left img {
+    width: 293px;
+    height: 229px;
+    border-radius: 10px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0 auto;
+  }
+  #candidates .what-to-expect .left .title-base {
+    padding-top: 35px;
+    margin-bottom: 20px;
+  }
+  #candidates .what-to-expect .left .subtitle-base {
+    margin-bottom: 20px;
+  }
+  #candidates .what-to-expect .left .context-base {
+    margin-bottom: 20px;
+  }
+  #candidates .what-to-expect .left ul li {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  #candidates .what-to-expect .right {
+    width: 100%;
+    text-align: center;
+  }
+  #candidates .what-to-expect .right::before, #candidates .what-to-expect .right::after {
+    content: none;
+  }
+  #candidates .what-to-expect .right .img-1 {
+    width: 229px;
+    height: 229px;
+    margin: 0;
+  }
+  #candidates .talk-to-us .container .left .subtitle-base {
+    max-width: 320px;
+  }
+  #candidates .talk-to-us .container .left .btn-yellow {
+    display: flex;
+  }
+  #candidates .client-say {
+    padding: 50px 0 75px;
+  }
+  #candidates .client-say .slider-say .item img {
+    margin-bottom: 25px;
+  }
+  #candidates .client-say .slider-say .item .subtitle-base {
+    margin-bottom: 30px;
+  }
+  #candidates .client-say .slider-say .slick-dots li {
+    width: 14px;
+    height: 14px;
+    margin: 0 2px;
+  }
+}
 html,
 body {
   font-family: graphie, sans-serif;
