@@ -4291,6 +4291,204 @@ template {
     width: 100%;
   }
 }
+#insights .banner {
+  height: 570px;
+  background-image: url("../image/Stock Images/Fynity - Website Imagery/Insights/Fynity - Insights_Homepage_Banner.jpg");
+  position: relative;
+}
+#insights .banner::before {
+  content: "";
+  width: 55%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(84, 84, 84, 0) 100%);
+  z-index: 1;
+}
+#insights .banner::after {
+  content: "";
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(84, 84, 84, 0) 100%);
+  z-index: 1;
+}
+#insights .banner .container {
+  position: relative;
+  z-index: 2;
+}
+#insights .banner .container .subtitle-base {
+  max-width: 470px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#insights .wrap-content {
+  padding: 100px 0;
+}
+#insights .wrap-content .filter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+#insights .wrap-content .filter input {
+  width: 100%;
+  max-width: 440px;
+  height: 56px;
+  font-size: 20px;
+  color: #47A8BD;
+  border: none;
+  border-bottom: 1px solid #47A8BD;
+}
+#insights .wrap-content .filter input::-moz-placeholder {
+  color: #47A8BD;
+  opacity: 0.65;
+}
+#insights .wrap-content .filter input::placeholder {
+  color: #47A8BD;
+  opacity: 0.65;
+}
+#insights .wrap-content .filter button {
+  width: 56px;
+  height: 56px;
+  background: #47A8BD;
+  font-size: 21px;
+  color: #ffffff;
+  border: none;
+}
+#insights .wrap-content .item {
+  width: 50%;
+}
+#insights .wrap-content .item img {
+  width: 100%;
+  height: 468px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#insights .wrap-content .item h3 {
+  font-size: 20px;
+  line-height: 24px;
+  padding: 40px 40px 12px;
+  font-weight: 800;
+  color: #1D394B;
+  position: relative;
+}
+#insights .wrap-content .item i {
+  font-weight: 800;
+  position: relative;
+  left: 5px;
+}
+#insights .wrap-content .item h4 {
+  font-size: 33px;
+  line-height: 34px;
+  color: #47A8BD;
+  font-weight: 300;
+  padding: 0 40px 50px;
+  position: relative;
+}
+#insights .wrap-content .main-items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+#insights .wrap-content .main-items .item {
+  width: calc(50% - 20px);
+}
+#insights .wrap-content .sub-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+#insights .wrap-content .sub-items .item {
+  width: calc(33.33% - 20px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+#insights .wrap-content .sub-items .item:nth-child(3n) {
+  margin-right: 0;
+}
+#insights .wrap-content .sub-items .item img {
+  height: 307px;
+}
+#insights .talk-to-us {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1270px) {
+  #insights .wrap-content .item img {
+    height: 340px;
+  }
+  #insights .wrap-content .sub-items .item img {
+    height: 250px;
+  }
+}
+@media (max-width: 992px) {
+  #insights .banner .container .left {
+    width: 70%;
+  }
+  #insights .wrap-content .item img {
+    height: 240px;
+  }
+  #insights .wrap-content .sub-items .item img {
+    height: 150px;
+  }
+}
+@media (max-width: 768px) {
+  #insights .banner {
+    height: 100vh;
+    padding-bottom: 0;
+    padding-top: 70px;
+    justify-content: center;
+  }
+  #insights .banner .container .left {
+    width: 100%;
+  }
+  #insights .banner .container .subtitle-base {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #insights .banner .container .context-base {
+    margin-bottom: 20px;
+  }
+  #insights .wrap-content .filter input {
+    width: calc(100% - 50px);
+    height: 50px;
+    font-size: 16px;
+  }
+  #insights .wrap-content .filter button {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+  #insights .wrap-content .item h3 {
+    font-size: 16px;
+    padding: 20px 30px 0;
+  }
+  #insights .wrap-content .item h4 {
+    font-size: 26px;
+    line-height: 30px;
+    padding: 18px 30px 0;
+  }
+  #insights .wrap-content .main-items {
+    flex-direction: column;
+  }
+  #insights .wrap-content .main-items .item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  #insights .wrap-content .sub-items .item {
+    width: 100%;
+    margin-right: 0;
+  }
+  #insights .wrap-content .sub-items .item img {
+    height: 250px;
+  }
+  #insights .talk-to-us {
+    margin-bottom: 0;
+  }
+}
 html,
 body {
   font-family: graphie, sans-serif;
