@@ -318,8 +318,7 @@
 }
 .banner {
   height: 720px;
-  background: url("https://hoanghamobile.com/tin-tuc/wp-content/uploads/2023/07/background-dep-don-gian.jpg")
-    center / cover;
+  background: url("") center / cover;
   padding: 110px 0;
   display: flex;
   flex-direction: column;
@@ -412,14 +411,26 @@
   .subtitle-base {
     margin-bottom: 50px;
   }
+  .wrapper {
+    width: calc(100vw + 50px);
+    overflow: auto;
+    margin-left: -25px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
   .items {
+    width: 1280px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin: auto;
     img {
-      width: 130px;
-      margin: 0 15px;
+      margin: 0 35px;
+      &:nth-child(3n + 2) {
+        margin-bottom: 20px;
+      }
     }
   }
 }

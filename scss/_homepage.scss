@@ -1,6 +1,19 @@
 @import "./variable";
 
 #homepage {
+  .banner {
+    height: auto;
+    max-height: 100vh;
+    padding: 0;
+    position: relative;
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
   .mission {
     display: flex;
     height: 721px;
