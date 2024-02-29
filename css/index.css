@@ -4489,6 +4489,237 @@ template {
     margin-bottom: 0;
   }
 }
+#contact .banner {
+  height: 560px;
+  background-image: url("../image/Stock Images/Fynity - Website Imagery/About Us/Fynity - About_Us_Hero_Banner_Flip.jpg");
+  position: relative;
+  padding-top: 70px;
+}
+#contact .banner::before {
+  content: "";
+  width: 83%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(84, 84, 84, 0) 100%);
+  z-index: 1;
+}
+#contact .banner::after {
+  content: "";
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(84, 84, 84, 0) 100%);
+  z-index: 1;
+}
+#contact .banner .container {
+  position: relative;
+  z-index: 2;
+}
+#contact .banner .container .subtitle-base {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#contact .banner .container .context-base {
+  max-width: 420px;
+  margin-bottom: 30px;
+}
+#contact .wrap-content {
+  padding: 100px 0 160px;
+  background: #1D394B;
+}
+#contact .wrap-content .container {
+  display: flex;
+}
+#contact .wrap-content .container .title {
+  font-size: 33px;
+  line-height: 1.3;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+#contact .wrap-content .container .left {
+  width: 40%;
+  max-width: 440px;
+}
+#contact .wrap-content .container .left p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+#contact .wrap-content .container .left .contact {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+#contact .wrap-content .container .left .contact a {
+  display: flex;
+  color: #F5E663;
+}
+#contact .wrap-content .container .left .contact img {
+  width: 22px;
+  margin-top: 10px;
+}
+#contact .wrap-content .container .right {
+  flex: 1;
+  max-width: 620px;
+}
+#contact .wrap-content .container .right input, #contact .wrap-content .container .right textarea {
+  display: block;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 10px;
+}
+#contact .wrap-content .container .right input::-moz-placeholder, #contact .wrap-content .container .right textarea::-moz-placeholder {
+  color: #ffffff;
+}
+#contact .wrap-content .container .right input::placeholder, #contact .wrap-content .container .right textarea::placeholder {
+  color: #ffffff;
+}
+#contact .wrap-content .container .right textarea {
+  height: 175px;
+  resize: none;
+}
+#contact .wrap-content .container .right .input-file .file {
+  position: relative;
+  z-index: 1;
+}
+#contact .wrap-content .container .right .input-file .file .btn-yellow {
+  width: 177px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+#contact .wrap-content .container .right .disc {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+#contact .wrap-content .container .right .checkbox {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 18px;
+  padding-left: 28px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  margin-bottom: 60px;
+}
+#contact .wrap-content .container .right .checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+#contact .wrap-content .container .right .checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+#contact .wrap-content .container .right .checkbox input:checked ~ .checkmark {
+  background-color: #F5E663;
+  border-color: #F5E663;
+}
+#contact .wrap-content .container .right .checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+#contact .wrap-content .container .right .checkbox .checkmark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+}
+#contact .wrap-content .container .right .checkbox .checkmark:after {
+  content: "";
+  display: none;
+  width: 5px;
+  height: 9px;
+  border: solid #000000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  position: relative;
+  bottom: 1px;
+}
+
+@media (max-width: 992px) {
+  #contact .banner .container .left {
+    width: 70%;
+  }
+  #contact .wrap-content .container .right {
+    min-width: 550px;
+  }
+}
+@media (max-width: 768px) {
+  #contact .banner {
+    height: 100vh;
+    padding-bottom: 0;
+    padding-top: 70px;
+    justify-content: center;
+  }
+  #contact .banner .container .left {
+    width: 100%;
+  }
+  #contact .banner .container .subtitle-base {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #contact .banner .container .context-base {
+    margin-bottom: 20px;
+  }
+  #contact .wrap-content {
+    padding: 50px 0 70px;
+  }
+  #contact .wrap-content .container {
+    flex-direction: column;
+  }
+  #contact .wrap-content .container .title {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  #contact .wrap-content .container .left {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 40px;
+  }
+  #contact .wrap-content .container .left p {
+    font-size: 16px;
+  }
+  #contact .wrap-content .container .right {
+    width: 100%;
+    max-width: none;
+    min-width: auto;
+  }
+  #contact .wrap-content .container .right input, #contact .wrap-content .container .right textarea {
+    font-size: 16px;
+  }
+  #contact .wrap-content .container .right .input-file .btn-yellow {
+    display: none;
+  }
+  #contact .wrap-content .container .right .checkbox {
+    margin-bottom: 30px;
+  }
+}
 html,
 body {
   font-family: graphie, sans-serif;
