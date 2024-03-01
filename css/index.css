@@ -5050,26 +5050,38 @@ template {
 }
 
 @media (max-width: 1270px) {
-  #key-hire .description .container {
-    padding: 0 100px 140px;
+  #key-hire .if-you .container::before {
+    left: -120px;
   }
-  #key-hire .description .bluebox {
-    padding: 70px 160px 100px 90px;
+  #key-hire .client-say .container {
+    padding: 0 40px;
   }
 }
 @media (max-width: 992px) {
   #key-hire .banner .container .left {
     width: 70%;
   }
-  #key-hire .description .container {
-    padding: 0 0 100px;
+  #key-hire .if-you .container::before {
+    left: -140px;
   }
-  #key-hire .description .bluebox {
-    padding: 50px 150px 100px 50px;
+  #key-hire .if-you .left {
+    min-width: 365px;
+    padding-right: 50px;
   }
-  #key-hire .what-to-expect .left {
-    margin-left: 0;
-    margin-right: 50px;
+  #key-hire .whitebox .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #key-hire .whitebox .container .item {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+  }
+  #key-hire .main-benefits .container {
+    padding: 0;
+  }
+  #key-hire .main-benefits .wrapper .items .item .wrap-img {
+    width: 130px;
   }
 }
 @media (max-width: 768px) {
@@ -5089,76 +5101,44 @@ template {
   #key-hire .banner .container .context-base {
     margin-bottom: 20px;
   }
-  #key-hire .description {
-    background: #1D244B;
+  #key-hire .if-you {
+    margin: 0;
   }
-  #key-hire .description .container {
-    padding: 70px 0 80px;
-  }
-  #key-hire .description .container::before {
-    content: none;
-  }
-  #key-hire .description .bluebox {
+  #key-hire .if-you .container {
     padding: 0;
   }
-  #key-hire .description .bluebox::before, #key-hire .description .bluebox::after {
+  #key-hire .if-you .container::before {
     content: none;
   }
-  #key-hire .description .bluebox .subtitle-base {
-    margin-bottom: 30px;
+  #key-hire .whitebox {
+    padding: 80px 0;
   }
-  #key-hire .description .bluebox .context-base {
-    margin-bottom: 30px;
+  #key-hire .key-features {
+    padding: 70px 0;
   }
-  #key-hire .what-to-expect {
-    padding: 50px 0 60px;
-  }
-  #key-hire .what-to-expect .container {
+  #key-hire .key-features .wrapper {
     flex-direction: column;
   }
-  #key-hire .what-to-expect .left {
+  #key-hire .key-features .wrapper ul {
     width: 100%;
   }
-  #key-hire .what-to-expect .left::before {
-    content: none;
+  #key-hire .main-benefits {
+    padding: 70px 0;
   }
-  #key-hire .what-to-expect .left img {
-    width: 293px;
-    height: 229px;
-    border-radius: 10px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    margin: 0 auto;
+  #key-hire .main-benefits .wrapper {
+    flex-direction: column;
   }
-  #key-hire .what-to-expect .left .title-base {
-    padding-top: 35px;
-    margin-bottom: 20px;
-  }
-  #key-hire .what-to-expect .left .subtitle-base {
-    margin-bottom: 20px;
-  }
-  #key-hire .what-to-expect .left .context-base {
-    margin-bottom: 20px;
-  }
-  #key-hire .what-to-expect .left ul li {
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 20px;
-  }
-  #key-hire .what-to-expect .right {
+  #key-hire .main-benefits .wrapper .items {
     width: 100%;
-    text-align: center;
   }
-  #key-hire .what-to-expect .right::before, #key-hire .what-to-expect .right::after {
-    content: none;
-  }
-  #key-hire .what-to-expect .right .img-1 {
-    width: 229px;
-    height: 229px;
-    margin: 0;
+  #key-hire .main-benefits .wrapper .items:first-child .item:last-child {
+    border-bottom: 2px solid #ffffff;
   }
   #key-hire .client-say {
     padding: 50px 0 75px;
+  }
+  #key-hire .client-say .container {
+    padding: 0;
   }
   #key-hire .client-say .slider-say .item img {
     margin-bottom: 25px;
