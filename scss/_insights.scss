@@ -83,12 +83,12 @@
         font-size: 20px;
         line-height: 24px;
         padding: 40px 40px 12px;
-        font-weight: $extra-bold;
+        @include extrabold;
         color: $charcoal-blue;
         position: relative;
       }
       i {
-        font-weight: $extra-bold;
+        @include extrabold;
         position: relative;
         left: 5px;
       }
@@ -96,7 +96,7 @@
         font-size: 33px;
         line-height: 34px;
         color: $moonstone-blue;
-        font-weight: $light;
+        @include light;
         padding: 0 40px 50px;
         position: relative;
       }

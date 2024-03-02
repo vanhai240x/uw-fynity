@@ -162,13 +162,13 @@
   font-size: 22px;
   line-height: 1.5;
   color: $white;
-  font-weight: $semi-bold;
+  @include semibold;
 }
 .subtitle-base {
   font-size: 48px;
   line-height: 1.125;
   color: $maize-yellow;
-  font-weight: $light;
+  @include light;
 }
 .context-base {
   font-size: 20px;
@@ -179,7 +179,7 @@
   min-width: 150px;
   font-size: 18px;
   color: $maize-yellow;
-  font-weight: $semi-bold;
+  @include semibold;
   line-height: 34px;
   padding: 10px 24px;
   background: none;
@@ -513,13 +513,13 @@
         font-size: 20px;
         line-height: 24px;
         padding: 40px 40px 12px;
-        font-weight: $extra-bold;
+        @include extrabold;
         color: $maize-yellow;
         position: relative;
         transition: 0.3s ease-in-out;
       }
       i {
-        font-weight: $extra-bold;
+        @include extrabold;
         position: relative;
         left: 5px;
         transition: 0.3s ease-in-out;
@@ -528,7 +528,7 @@
         font-size: 33px;
         line-height: 34px;
         color: $white;
-        font-weight: $light;
+        @include light;
         padding: 0 40px 50px;
         position: relative;
         transition: 0.3s ease-in-out;
@@ -553,7 +553,7 @@
   }
   li {
     display: inline;
-    font-weight: $semi-bold;
+    @include semibold;
     font-size: 20px;
     line-height: 1.5;
     color: $white;
@@ -564,7 +564,7 @@
     }
     a {
       color: $white;
-      font-weight: $book;
+      @include book;
       text-decoration: none;
     }
   }
@@ -673,7 +673,7 @@
         .context-base {
           font-size: 16px;
           line-height: 20px;
-          font-weight: $regular;
+          @include regular;
           margin-bottom: 50px;
         }
         .btn-yellow {

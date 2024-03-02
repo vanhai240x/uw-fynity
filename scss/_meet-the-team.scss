@@ -103,12 +103,12 @@
           font-size: 20px;
           line-height: 1.5;
           color: $white;
-          font-weight: $bold;
+          @include bold;
           position: relative;
           z-index: 2;
         }
         .p2 {
-          font-weight: $book;
+          @include book;
           margin-top: 5px;
         }
         .btn-yellow {
@@ -190,7 +190,7 @@
         }
         .title-base {
           font-size: 20px;
-          font-weight: $bold;
+          @include bold;
           margin-bottom: 30px;
         }
         .context-base {

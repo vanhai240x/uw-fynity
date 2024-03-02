@@ -17,9 +17,9 @@
 @import "./key-hire";
 html,
 body {
-  font-family: graphie, sans-serif;
+  font-family: "graphie-book", sans-serif;
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
 }
 
 @media (max-width: 1270px) {}

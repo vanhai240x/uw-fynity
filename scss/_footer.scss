@@ -49,7 +49,7 @@
         max-width: 115px;
         font-size: 18px;
         line-height: 1.5;
-        font-weight: $regular;
+        @include regular;
         color: #f7f7f7;
         margin-right: 60px;
       }
@@ -59,7 +59,7 @@
           font-size: 20px;
           line-height: 1.5;
           color: $white;
-          font-weight: $semi-bold;
+          @include semibold;
         }
       }
     }

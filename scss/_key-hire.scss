@@ -46,12 +46,12 @@
       }
       .subtitle-base {
         font-size: 63px;
-        font-weight: $bold;
+        @include bold;
         color: $white;
         margin: 20px 0;
       }
       .context-base {
-        font-weight: $extra-bold;
+        @include extrabold;
         color: $maize-yellow;
         margin-bottom: 30px;
       }
@@ -169,7 +169,7 @@
       margin-bottom: 40px;
     }
     .title-base {
-      font-weight: $regular;
+      @include regular;
       margin-bottom: 30px;
     }
     .wrapper {
@@ -275,11 +275,11 @@
         margin-bottom: 50px;
       }
       .c-black {
-        font-weight: $extra-bold;
+        @include extrabold;
       }
       .c-blue-bold {
         color: $space-cadet-blue;
-        font-weight: $regular;
+        @include regular;
       }
       .slick-dots {
         display: flex;

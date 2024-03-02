@@ -1,5 +1,56 @@
 // Font
 @font-face {
-    font-family: '';
-    src: url('');
+  font-family: "graphie-thin";
+  src: url("../font/Graphie/Graphie-Thin.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "graphie-extralight";
+  src: url("../font/Graphie/Graphie-ExtraLight.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "graphie-light";
+  src: url("../font/Graphie/Graphie-Light.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "graphie-book";
+  src: url("../font/Graphie/Graphie-Book.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "graphie-regular";
+  src: url("../font/Graphie/Graphie-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "graphie-semibold";
+  src: url("../font/Graphie/Graphie-SemiBold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "graphie-bold";
+  src: url("../font/Graphie/Graphie-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "graphie-extrabold";
+  src: url("../font/Graphie/Graphie-ExtraBold.otf");
+  font-weight: normal;
+  font-style: normal;
 }

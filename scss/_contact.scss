@@ -55,7 +55,7 @@
       .title {
         font-size: 33px;
         line-height: 1.3;
-        font-weight: $light;
+        @include light;
         margin-bottom: 30px;
       }
       .left {
@@ -65,11 +65,11 @@
           font-size: 20px;
           line-height: 1.6;
           color: $white;
-          font-weight: $book;
+          @include book;
           margin-bottom: 25px;
         }
         .contact {
-          font-weight: $semi-bold;
+          @include semibold;
           display: flex;
           flex-direction: column;
           a {
@@ -90,7 +90,7 @@
           width: 100%;
           height: 50px;
           font-size: 20px;
-          font-weight: $book;
+          @include book;
           color: $white;
           background: none;
           border: none;
@@ -119,7 +119,7 @@
         }
         .disc {
           font-size: 14px;
-          font-weight: $book;
+          @include book;
           color: $white;
           margin-bottom: 20px;
         }
@@ -128,7 +128,7 @@
           position: relative;
           font-size: 16px;
           color: $white;
-          font-weight: $book;
+          @include book;
           line-height: 18px;
           padding-left: 28px;
           cursor: pointer;

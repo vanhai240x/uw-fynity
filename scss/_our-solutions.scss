@@ -200,25 +200,25 @@
         h3 {
           font-size: 50px;
           line-height: 54px;
-          font-weight: $bold;
+          @include bold;
           color: $white;
         }
         h4 {
           font-size: 18px;
           line-height: 30px;
           color: $maize-yellow;
-          font-weight: $extra-bold;
+          @include extrabold;
           margin-bottom: 25px;
         }
         p {
           font-size: 20px;
           line-height: 1.5;
           color: $white;
-          font-weight: $bold;
+          @include bold;
           margin-bottom: 20px;
         }
         .p2 {
-          font-weight: $book;
+          @include book;
           margin-bottom: 0;
         }
         .btn-yellow {
