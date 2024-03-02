@@ -777,9 +777,7 @@ template {
   transition: 0.3s ease-in-out;
 }
 .insights .slider-insights .item i {
-  font-family: "graphie-extrabold", sans-serif !important;
-  font-weight: normal !important;
-  font-style: normal !important;
+  font-weight: 800;
   position: relative;
   left: 5px;
   transition: 0.3s ease-in-out;
@@ -4529,9 +4527,7 @@ template {
   position: relative;
 }
 #insights .wrap-content .item i {
-  font-family: "graphie-extrabold", sans-serif !important;
-  font-weight: normal !important;
-  font-style: normal !important;
+  font-weight: 800;
   position: relative;
   left: 5px;
 }
