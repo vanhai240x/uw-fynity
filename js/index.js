@@ -44,6 +44,22 @@ $(document).ready(() => {
     dots: true,
     arrows: false,
   });
+  // About us
+  $('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    centerMode: true,
+    arrows: true,
+    focusOnSelect: true
+  });
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows: false,
+    asNavFor: '.slider-nav'
+  });
   scroolDown();
 });
 
@@ -122,7 +138,7 @@ $("#meet-the-team .popup .wrapper .close").click(() => {
   $("#meet-the-team .popup").removeClass("active");
 });
 $("#meet-the-team .popup").click((e) => {
-  if ($(e.target).attr('class') === "popup active") {
+  if ($(e.target).attr("class") === "popup active") {
     $("#meet-the-team .popup").removeClass("active");
   }
 });
