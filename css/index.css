@@ -5161,13 +5161,13 @@ template {
 }
 #key-hire .if-you .container::before {
   content: "";
-  width: 122px;
-  height: 282px;
+  width: 202px;
+  height: 342px;
   background: #47a8bd;
   border-radius: 25px;
   position: absolute;
-  top: -50px;
-  left: -70px;
+  top: -20px;
+  left: -140px;
 }
 #key-hire .if-you .container::after {
   content: "";
@@ -5182,6 +5182,17 @@ template {
 #key-hire .if-you .container .left {
   max-width: 365px;
   margin: auto;
+  position: relative;
+}
+#key-hire .if-you .container .left::before {
+  content: "";
+  width: 160px;
+  height: 70px;
+  background: #f5e663;
+  border-radius: 12px;
+  position: absolute;
+  top: -120px;
+  left: -295px;
 }
 #key-hire .if-you .container .left .subtitle-base {
   margin-bottom: 50px;
@@ -5418,7 +5429,7 @@ template {
 
 @media (max-width: 1270px) {
   #key-hire .if-you .container::before {
-    left: -120px;
+    left: -280px;
   }
   #key-hire .client-say .container {
     padding: 0 40px;
@@ -5427,9 +5438,6 @@ template {
 @media (max-width: 992px) {
   #key-hire .banner .container .left {
     width: 70%;
-  }
-  #key-hire .if-you .container::before {
-    left: -140px;
   }
   #key-hire .if-you .left {
     min-width: 365px;
@@ -5469,13 +5477,33 @@ template {
     margin-bottom: 20px;
   }
   #key-hire .if-you {
+    padding: 70px 0;
     margin: 0;
   }
   #key-hire .if-you .container {
+    flex-direction: column-reverse;
     padding: 0;
   }
   #key-hire .if-you .container::before {
     content: none;
+  }
+  #key-hire .if-you .container .left {
+    padding-right: 0;
+    min-width: auto;
+  }
+  #key-hire .if-you .container .left .subtitle-base {
+    margin-bottom: 20px;
+  }
+  #key-hire .if-you .container .right {
+    margin-bottom: 30px;
+  }
+  #key-hire .if-you .container .right img {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+    border-radius: 12px;
+    margin: auto;
   }
   #key-hire .whitebox {
     padding: 80px 0;

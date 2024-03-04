@@ -66,13 +66,13 @@
       position: relative;
       &::before {
         content: "";
-        width: 122px;
-        height: 282px;
+        width: 202px;
+        height: 342px;
         background: $moonstone-blue;
         border-radius: 25px;
         position: absolute;
-        top: -50px;
-        left: -70px;
+        top: -20px;
+        left: -140px;
       }
       &::after {
         content: "";
@@ -87,6 +87,17 @@
       .left {
         max-width: 365px;
         margin: auto;
+        position: relative;
+        &::before {
+          content: "";
+          width: 160px;
+          height: 70px;
+          background: $maize-yellow;
+          border-radius: 12px;
+          position: absolute;
+          top: -120px;
+          left: -295px;
+        }
         .subtitle-base {
           margin-bottom: 50px;
         }
@@ -323,7 +334,7 @@
 @media (max-width: 1270px) {
   #key-hire {
     .if-you .container::before {
-      left: -120px;
+      left: -280px;
     }
     .client-say .container {
       padding: 0 40px;
@@ -339,9 +350,6 @@
       }
     }
     .if-you {
-      .container::before {
-        left: -140px;
-      }
       .left {
         min-width: 365px;
         padding-right: 50px;
@@ -388,11 +396,31 @@
       }
     }
     .if-you {
+      padding: 70px 0;
       margin: 0;
       .container {
+        flex-direction: column-reverse;
         padding: 0;
         &::before {
           content: none;
+        }
+        .left {
+          padding-right: 0;
+          min-width: auto;
+          .subtitle-base {
+            margin-bottom: 20px;
+          }
+        }
+        .right {
+          margin-bottom: 30px;
+          img {
+            display: block;
+            width: 100%;
+            max-width: 350px;
+            height: 250px;
+            border-radius: 12px;
+            margin: auto;
+          }
         }
       }
     }
