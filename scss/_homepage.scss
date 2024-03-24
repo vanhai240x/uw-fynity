@@ -304,12 +304,15 @@
       margin-bottom: 80px;
     }
     .slider-talent {
+      width: calc(100% + 80px);
+      margin-left: -40px;
       .item {
-        width: 255px;
+        width: 255px !important;
         min-height: 350px;
         display: flex !important;
         flex-direction: column;
         justify-content: flex-end;
+        margin: auto;
         img {
           width: max-content;
           margin-bottom: 25px;
@@ -330,7 +333,7 @@
       }
       .slick-next,
       .slick-prev {
-        right: -146px;
+        right: -200px;
       }
       .slick-prev {
         transform: translateY(-50%) scaleX(-1);
@@ -464,6 +467,17 @@
   }
 }
 
+@media (max-width: 1400px) {
+  #homepage .talent-solutions .slider-talent {
+    .slick-prev {
+      left: -160px;
+    }
+    .slick-next {
+      right: -160px;
+    }
+  }
+}
+
 @media (max-width: 1270px) {
   #homepage {
     .talent-solutions {
@@ -471,6 +485,8 @@
         padding: 0 30px;
       }
       .slider-talent {
+        width: calc(100% + 60px);
+        margin-left: -30px;
         .slick-prev {
           transform: translateY(-50%) scaleX(-1);
           left: -80px;
@@ -500,6 +516,16 @@
   #homepage {
     .find-role .bluebox .form .input {
       width: 250px;
+    }
+    .talent-solutions .slider-talent {
+      width: 100%;
+      margin-left: 0px;
+      .slick-prev {
+        left: -70px;
+      }
+      .slick-next {
+        right: -70px;
+      }
     }
     .mission {
       .block {

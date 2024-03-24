@@ -1678,12 +1678,17 @@ template {
   max-width: 530px;
   margin-bottom: 80px;
 }
+#homepage .talent-solutions .slider-talent {
+  width: calc(100% + 80px);
+  margin-left: -40px;
+}
 #homepage .talent-solutions .slider-talent .item {
-  width: 255px;
+  width: 255px !important;
   min-height: 350px;
   display: flex !important;
   flex-direction: column;
   justify-content: flex-end;
+  margin: auto;
 }
 #homepage .talent-solutions .slider-talent .item img {
   width: -moz-max-content;
@@ -1709,7 +1714,7 @@ template {
 }
 #homepage .talent-solutions .slider-talent .slick-next,
 #homepage .talent-solutions .slider-talent .slick-prev {
-  right: -146px;
+  right: -200px;
 }
 #homepage .talent-solutions .slider-talent .slick-prev {
   transform: translateY(-50%) scaleX(-1);
@@ -1844,9 +1849,21 @@ template {
   color: #ffffff;
 }
 
+@media (max-width: 1400px) {
+  #homepage .talent-solutions .slider-talent .slick-prev {
+    left: -160px;
+  }
+  #homepage .talent-solutions .slider-talent .slick-next {
+    right: -160px;
+  }
+}
 @media (max-width: 1270px) {
   #homepage .talent-solutions .container {
     padding: 0 30px;
+  }
+  #homepage .talent-solutions .slider-talent {
+    width: calc(100% + 60px);
+    margin-left: -30px;
   }
   #homepage .talent-solutions .slider-talent .slick-prev {
     transform: translateY(-50%) scaleX(-1);
@@ -1870,6 +1887,16 @@ template {
 @media (max-width: 992px) {
   #homepage .find-role .bluebox .form .input {
     width: 250px;
+  }
+  #homepage .talent-solutions .slider-talent {
+    width: 100%;
+    margin-left: 0px;
+  }
+  #homepage .talent-solutions .slider-talent .slick-prev {
+    left: -70px;
+  }
+  #homepage .talent-solutions .slider-talent .slick-next {
+    right: -70px;
   }
   #homepage .mission .block {
     padding: 170px 50px;
@@ -2281,7 +2308,7 @@ template {
   max-width: 445px;
 }
 #about-us .working-with .left .title-base {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 #about-us .working-with .left .subtitle-base {
   max-width: 400px;
@@ -2611,6 +2638,9 @@ template {
   #about-us .drives-us .container .right {
     padding: 0;
   }
+  #about-us .drives-us .container .right h4 {
+    margin-bottom: 30px;
+  }
   #about-us .working-with .container {
     padding: 32px 0 50px;
     flex-direction: column;
@@ -2636,7 +2666,7 @@ template {
     margin-bottom: 20px;
   }
   #about-us .working-with .container .left .subtitle-base {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   #about-us .working-with .container .left .context-base {
     margin-bottom: 30px;

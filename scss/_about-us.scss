@@ -222,7 +222,7 @@
     .left {
       max-width: 445px;
       .title-base {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
       }
       .subtitle-base {
         max-width: 400px;
@@ -584,6 +584,9 @@
         }
         .right {
           padding: 0;
+          h4 {
+            margin-bottom: 30px;
+          }
         }
       }
     }
@@ -611,7 +614,7 @@
             margin-bottom: 20px;
           }
           .subtitle-base {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
           }
           .context-base {
             margin-bottom: 30px;
